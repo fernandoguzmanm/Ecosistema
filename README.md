@@ -1,0 +1,13 @@
+Este proyecto ha sido desarrollado en Java y simula un ecosistema en el que interactúan dos tipos de animales: lobos y ovejas. Cada uno de estos animales puede tener una dieta específica, siendo carnívoro o herbívoro. Además, el ecosistema se compone de dos tipos de regiones: la región dinámica, que puede cambiar con el tiempo, y la región por defecto, que mantiene características fijas.
+
+El programa cuenta con una interfaz gráfica (GUI) que ofrece varias funcionalidades. En el panel principal se presentan dos tablas clave. La primera tabla muestra información sobre las especies presentes en el ecosistema, indicando el tipo de especie y el número de animales de cada especie, según su estado. La segunda tabla ofrece un desglose detallado de cuántos animales con cada tipo de dieta (carnívoros y herbívoros) se encuentran en cada fila y columna de la región.
+
+En la parte superior de la interfaz, se encuentra un conjunto de botones que permiten interactuar con diferentes aspectos del programa. El primer botón, con forma de carpeta, sirve para cargar archivos JSON que contienen la información de los animales y las regiones. El segundo botón, con forma de mapa, despliega una visualización interactiva del ecosistema, mostrando los movimientos y acciones de los animales en tiempo real. Además, hay un botón con un ícono de globo terráqueo que abre un cuadro de diálogo, donde se puede consultar una tabla con los datos detallados de cada región.
+
+Otros elementos en esta sección incluyen un botón para iniciar la simulación y otro para detenerla, un spinner que permite ajustar el número de pasos a ejecutar en la simulación, y un cuadro de texto donde se puede introducir el valor del "Delta Time", que ajusta la velocidad del avance temporal. También hay un botón para salir del programa.
+
+En la parte inferior de la interfaz, se muestran valores importantes relacionados con el tiempo transcurrido, el total de animales en el ecosistema y las dimensiones de las regiones.
+
+Este proyecto implementa varios patrones de diseño. El patrón Observer se utiliza para monitorear los cambios que se producen en los objetos; de este modo, cualquier alteración en el estado de un objeto observado desencadena notificaciones a sus observadores. El patrón Factory permite separar el código de construcción de los productos (animales y regiones) del código que los utiliza, facilitando así la creación de instancias. Por último, el patrón Builder permite construir diferentes representaciones de los productos, como las distintas configuraciones de animales y regiones en la simulación.
+
+En conjunto, estos patrones facilitan la organización y escalabilidad del código, permitiendo que el proyecto sea flexible y fácil de mantener.
