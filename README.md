@@ -9,5 +9,3 @@ Otros elementos en esta sección incluyen un botón para iniciar la simulación 
 En la parte inferior de la interfaz, se muestran valores importantes relacionados con el tiempo transcurrido, el total de animales en el ecosistema y las dimensiones de las regiones.
 
 Este proyecto implementa varios patrones de diseño. El patrón Observer se utiliza para monitorear los cambios que se producen en los objetos; de este modo, cualquier alteración en el estado de un objeto observado desencadena notificaciones a sus observadores. El patrón Factory permite separar el código de construcción de los productos (animales y regiones) del código que los utiliza, facilitando así la creación de instancias. Por último, el patrón Builder permite construir diferentes representaciones de los productos, como las distintas configuraciones de animales y regiones en la simulación.
-
-En conjunto, estos patrones facilitan la organización y escalabilidad del código, permitiendo que el proyecto sea flexible y fácil de mantener.
